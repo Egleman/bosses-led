@@ -1,0 +1,25 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1730px;
+    width: 100%;
+    position: relative;
+    padding: 0px 15px;
+}
+a {
+    text-decoration: none;
+}
+
+
+$font-lato: 'Lato', sans-serif;
+$font-playFair: 'Playfair Display', serif;
+$font-color: #fff;
+
+@import './header';
+@import './message';

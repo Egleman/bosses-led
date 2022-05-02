@@ -1,0 +1,75 @@
+.message {
+    position: relative;
+    padding: 340px 0px 280px 0px;
+    background: linear-gradient(356.6deg, #2D2D2D 7.37%, rgba(0, 0, 0, 0) 71.65%), linear-gradient(130.37deg, rgba(0, 0, 0, 0.6) 44.27%, rgba(0, 0, 0, 0) 96.65%), url('../images/led-823383_1920\ 1.png') no-repeat center/cover;
+    // transform: matrix(-1, 0, 0, 1, 0, 0);
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__text-block {
+        max-width: 685px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text-block img {
+        max-width: 50px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__text-block h1 {
+        font-family: $font-playFair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 130%;
+        /* or 71px */
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    &__text-block p {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+.social-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 43%;
+    left: 0%;
+}
+.social-block a:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+.message-progressbar {
+    position: absolute;
+    top: 70%;
+    right: 0%;
+}
+.message-progressbar__list {
+    display: flex;
+    flex-direction: column;
+}
+.message-progressbar__item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

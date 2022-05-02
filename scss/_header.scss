@@ -1,0 +1,132 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding-top: 40px;
+    &__link-lato-700 {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+    &__list li:not(:last-of-type) {
+        margin-right: 30px;
+    }
+    &__list-last {
+        margin-right: 50px;
+    }
+    &__list-right {
+        display: flex;
+        list-style: none;
+    }
+    a {
+        color: $font-color;
+    }
+    &__logo {
+        max-width: 185px;
+        width: 100%;
+    }
+    &__phone {
+        max-width: 45px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    &__list-first-child {
+        margin-right: 115px;
+    }
+    &__acount {
+        margin-right: 55px;
+    }
+    
+    &__link-lato-400 {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__menu {
+        z-index: 1;
+        padding: 35px 0px 90px 0px;
+        background-color: black;
+        position: absolute;
+        top: -200%;
+        width: 100%;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+    &__menu-content {
+        display: flex;
+    }
+    &__menu-block {
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+    }
+    &__menu-group {
+        margin-bottom: 30px;
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 140%;
+        text-transform: uppercase;
+        display: block;
+    }
+    &__menu-block>ul>li:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    &__menu-link{
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        /* or 24px */
+        color: #FFFFFF;
+    }
+        
+}
+.d-none {
+    display: none;
+}
+.active-link {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+    /* identical to box height, or 24px */
+
+    text-transform: uppercase;
+    padding-bottom: 15px;
+
+    color: rgba(255, 255, 255, 0.5) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}

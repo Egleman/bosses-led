@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1730px;
+  width: 100%;
+  position: relative;
+  padding: 0px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding-top: 40px;
+}
+
+.header__link-lato-700 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header__list li:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.header__list-last {
+  margin-right: 50px;
+}
+
+.header__list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header__logo {
+  max-width: 185px;
+  width: 100%;
+}
+
+.header__phone {
+  max-width: 45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+
+.header__list-first-child {
+  margin-right: 115px;
+}
+
+.header__acount {
+  margin-right: 55px;
+}
+
+.header__link-lato-400 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu {
+  z-index: 1;
+  padding: 35px 0px 90px 0px;
+  background-color: black;
+  position: absolute;
+  top: -200%;
+  width: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.header__menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu-block:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.header__menu-group {
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  text-transform: uppercase;
+  display: block;
+}
+
+.header__menu-block > ul > li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.header__menu-link {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  /* or 24px */
+  color: #FFFFFF;
+}
+
+.d-none {
+  display: none;
+}
+
+.active-link {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  /* identical to box height, or 24px */
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.message {
+  position: relative;
+  padding: 340px 0px 280px 0px;
+  background: linear-gradient(356.6deg, #2D2D2D 7.37%, rgba(0, 0, 0, 0) 71.65%), linear-gradient(130.37deg, rgba(0, 0, 0, 0.6) 44.27%, rgba(0, 0, 0, 0) 96.65%), url("../images/led-823383_1920 1.png") no-repeat center/cover;
+}
+
+.message__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.message__text-block {
+  max-width: 685px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message__text-block img {
+  max-width: 50px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.message__text-block h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 130%;
+  /* or 71px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.message__text-block p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.social-block {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 43%;
+  left: 0%;
+}
+
+.social-block a:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.message-progressbar {
+  position: absolute;
+  top: 70%;
+  right: 0%;
+}
+
+.message-progressbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message-progressbar__item {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Bosses Led</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li><a href="#" class="header__link header__link-lato-700">ТОВАРЫ</a></li>
+                            <li><a href="#" class="header__link header__link-lato-700">ПОКУПАТЕЛЯМ</a></li>
+                            <li class="header__list-last"><a href="#" class="header__link header__link-lato-700">О КОМПАНИИ</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__search">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="30" height="30" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_118_1016" transform="scale(0.0104167)"/>
+                            </pattern>
+                            <image id="image0_118_1016" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFv0lEQVR4nO2cTYwURRiG3wYWTFg0aALCyo8iQYyBExoUPBA0mPh7FoVAIHLyYES9edIQY8KFAxoJoPGISFCINxEUUE8kCEg0IoREXUB2dhfdlcdDDaK4X3dP90xXzU49yV5qZ6af6q+6uv6lSCQSiUQikUgkEolEIpFIp5D4FpAkYLykByQtljSv/jdN0mRJE+sf65d0UdJ5SScknZL0paSjSZL8WbVz2wN0A6uA/UA/xakB+4DngW7f+QoeYC7wbv3GNZsa8A4wx3c+gwOYBXwIDLfgxt/IMPABMNN3vr0DjAdepVw1U5Qa8ArQ5fs+eAFX6r/ycONv5BsCrZZa1goCnpK0Q9ItOb/SK+mApEOSjkv6QdIvcq0fybWGpkiaI2m+pCWSHpZ0a87fvyRpVZIke3J+vn0BXiBfXT8AbAeWAWMKXGcMsBzYUf+tLIaB9a3IczDg6vssasCbwJQmXncqsIl875qNzbpuUOBKfha7aGHrBPfe2Z3hcBVY1yoHLwBPk17t1IBVFfqsIf1pGAYer8qnpQB3AZdSMvszcJ8HrwXA2RSvC8Dsqr2aCq6d/3VKJk/gsUOEq5JOpfgdoZ37CcBrKZk7C8wKwPEO4EyK58u+HQtRL11WPVvDQ7VjASxMce0DZvh2bBjc2I5FZS/cvABrU3x3+vZrCNyoptXq2eXbzwL42HAeItDhihHBDSmPRI2ARyGB2di95q2+/XIBTMTVmyPxhm+/LIC3UgpP+JM6wGojA4PANN9+WeCGLaynYKVvv0xw04gjsd23W16AnUYe9vp2SwXX8bKmE5f59ssL8KiRhz5C7pgBSw3x3ygwpOwLYCxw0cjLQ1V5FLlhi430A0mSXC0jUyVJkvwl6XPj31Yem06RAMwz0g+WEfGE5WzlsekUCcA9Rvp3ZUQ8ccJIDzoA043002VEPPG9kd5TlUCRANxspPeWEfHEBSPdymPTKRIAq6dYKyPiictG+qSqBNqm2VgxlS1aLhIAq6SHP4byf6ySXtnTXCQA1mN7WxkRT1jOfVUJFAnAOSN9bhkRT1jOP1UlUCQAJ430+WVEPGE5/1iVQJEAWJ2XJWVEPGE5H6vUohFSBuN6gbG+/fICjMOtC/I6GNcwpA9HL/ftlxdghZGHAeCmqjwaroLqG+K+MP79XDmdSnnWSP8sSZIrlZo0Cm5DnFV6pvr2ywLoAa4YeVjt2y8T3A5Hqxra5NsvC+Btw/0yUNkwRClwuxFHop8AliNaAHenlP4tvv1yU8+ItTBrt28/C+ATw3kIaK/OJG4rqMUa3343AmxI8X3Pt1/DADOx3wX9wALfjtcAFmGvBQp6NV8quH24FqEsT58NnE/xfMm3Y2GALuBoSuZO+QxC/eafTvE7DIzz5dcUgDux19gAnAMWevBalFHyL9LuW5SuATxJ+ia9AWBthT4byN47fAiYUJVTywHWZ2QY3Pr8lpU6XPPYamqOxKejLQgbcftw0xjALRG/vYnXnY7r4VqdrI4KwjryHVUwiFul/AgFhrJx6ztXAO8XvPHeg9DKwzqekDusY3LOr1ySW6t5UG7S57SkX3V9frZb1w/ruFduMmVpg79/XNKDKZ/ZJ+mZJEn+yPmbYYNrAh4pWTKbwWGcywRcSU9j1FVH44AXcSONVdMPvM6/1vvjJpT2ZHxvPxVOylQCMANX3w+19JY7hoBtGMMLdOKTcA3cuRJbsTf5leEysIUco5odHQTpn52WK4G9JYMxgDueZjUNTqaEEIRQDm7tknS//ntwa4/ccWeT5Dxrkn6XdEZu3c4xSYclfVtmDrd+cz+S9FjKx0ZX6yg06NQXc0jEIARADEIAxCAEQAxCAMQgBEAMQgDEIAQAAfSYO56cQdjs23NUkyMIfUAQwzujlowgDNJGR/a0LSlB2ObbrWOoB2FzvdoZxE0AteNm9fYGSGK9H4lEIpFIJBKJRCKRSKRN+BuTVo+lrGaSpAAAAABJRU5ErkJggg=="/>
+                            </defs>
+                        </svg>         
+                    </a>
+                </div>
+                <div class="header__center"><img src="./images/logo.png" alt="logo" class="header__logo"></div>
+                <div class="header__right">
+                    <ul class="header__list-right">
+                        <li class="header__list-first-child">
+                            <a href="#" class="header__link header__link-lato-400">
+                                <img src="./images/call-button.png" alt="" class="header__phone">
+                                +79 246 824 68 84                           
+                            </a>
+                        </li>
+                        <li class="header__acount">
+                            <a href="#" class="header__link">
+                                <img src="./images/acount.png" alt="">
+                                                                        
+                            </a>
+                        </li>
+                        <li class="header__basket">
+                            <a href="#">
+                                <img src="./images/korzina.png" alt="">                                    
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__menu-content d-none">
+                    <div class="header__menu-block">
+                        <a href="#" class="header__menu-group">Светильники</a>
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Накладные</a></li>
+                            <li><a href="#" class="header__menu-link">Встроенные</a></li>
+                            <li><a href="#" class="header__menu-link">Подвесные</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__menu-block">
+                        <a href="#" class="header__menu-group">Трековое освещение</a>
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Однофазные</a></li>
+                            <li><a href="#" class="header__menu-link">Трёхфазные</a></li>
+                            <li><a href="#" class="header__menu-link">Магнитные</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__menu-block">
+                        <a href="#" class="header__menu-group">Светодиодные ленты</a>
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Монохромные</a></li>
+                            <li><a href="#" class="header__menu-link">RGB</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__menu-block">
+                        <a href="#" class="header__menu-group">Профильное освещение</a>
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Системы для гипсокартона</a></li>
+                            <li><a href="#" class="header__menu-link">Системы для натяжных потолков</a></li>
+                            <li><a href="#" class="header__menu-link">Подвесные</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__menu-block">
+                        <a href="#" class="header__menu-group">Оборудование</a>
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Блоки питания</a></li>
+                            <li><a href="#" class="header__menu-link">Контроллеры</a></li>
+                            <li><a href="#" class="header__menu-link">Пульты</a></li>
+                            <li><a href="#" class="header__menu-link">Усилители</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__menu-content d-none">
+                    <div class="header__menu-block">
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Оплата и доставка</a></li>
+                            <li><a href="#" class="header__menu-link">Возврат и обмен</a></li>
+                            <li><a href="#" class="header__menu-link">Служба поддержки</a></li>
+                            <li><a href="#" class="header__menu-link">Гарантия</a></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="header__menu-content d-none">
+                    <div class="header__menu-block">
+                        <ul>
+                            <li><a href="#" class="header__menu-link">Наша История</a></li>
+                            <li><a href="#" class="header__menu-link">Новости</a></li>
+                            <li><a href="#" class="header__menu-link">Партнёры</a></li>
+                            <li><a href="#" class="header__menu-link">Клиенты</a></li>
+                            <li><a href="#" class="header__menu-link">Контакты</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="message">
+            <div class="container">
+                <div class="message__inner">
+                    <div class="social-block">
+                        <a href="#"><img src="./images/icons8-telegram-app-50 (1) 1.png" alt="telegramm"></a>
+                        <a href="#"><img src="./images/icons8-instagram-logo-50 (1) 1.png" alt="instagramm"></a>
+                        <a href="#"><img src="./images/icons8-viber-50 (1) 1.png" alt="viber"></a>
+                        <a href="#"><img src="./images/icons8-whatsapp-50 (1) 1.png" alt="whatsapp"></a>
+                    </div>
+                    <div class="message__text-block">
+                        <img src="./images/arrow.png" alt="arrow" class="message__img">
+                        <h1>Лучшее LED-освещение
+                            для дома и офиса</h1>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях</p>
+                    </div>
+                    <div class="message-progressbar">
+                        <nav class="message-progressbar__list">
+                            <a href="#" class='message-progressbar__item'></a>
+                            <a href="#" class='message-progressbar__item'></a>
+                            <a href="#" class='message-progressbar__item'></a>
+                            <a href="#" class='message-progressbar__item'></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

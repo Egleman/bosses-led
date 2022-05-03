@@ -21,8 +21,11 @@ $font-lato: 'Lato', sans-serif;
 $font-playFair: 'Playfair Display', serif;
 $font-color: #fff;
 
+@import './footer';
+@import './title';
 @import './header';
 @import './message';
 @import './story';
 @import './warranty';
 @import './catalog';
+@import './feedback';

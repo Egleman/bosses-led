@@ -259,6 +259,12 @@ a {
   color: #FFFFFF;
 }
 
+.message__flashlight {
+  position: absolute;
+  left: 0%;
+  top: 27%;
+}
+
 .social-block {
   position: absolute;
   display: -webkit-box;
@@ -305,5 +311,211 @@ a {
   border: 1px solid #ffffff;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.story {
+  padding: 60px 0px 45px 0px;
+  background-color: #2D2D2D;
+}
+
+.story__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.story__text {
+  max-width: 725px;
+  width: 100%;
+}
+
+.story__text h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 140%;
+  /* identical to box height, or 63px */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.story__text p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  /* or 24px */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.story__text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story__text a > span {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FF1E56;
+  margin-right: 30px;
+}
+
+.story__text p:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.story__text p:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.story__img {
+  max-width: 833px;
+  width: 100%;
+}
+
+.warranty {
+  padding: 45px 0px 60px 0px;
+  background-color: #2D2D2D;
+}
+
+.warranty__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.warranty__block {
+  max-width: 346px;
+  width: 100%;
+  text-align: center;
+}
+
+.warranty__block:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.warranty__block span {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 140%;
+  /* identical to box height, or 196px */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: -75px;
+  display: block;
+}
+
+.warranty__block p:nth-child(2) {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  /* identical to box height, or 35px */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.warranty__block p:nth-child(3) {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  /* or 24px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.warranty__img {
+  position: absolute;
+  top: -135%;
+  left: -5%;
+}
+
+.catalog {
+  background-color: #2D2D2D;
+  padding: 60px 0px;
+}
+
+.catalog__inner h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 140%;
+  /* identical to box height, or 63px */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.catalog__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__image {
+  min-width: 540px;
+  width: 100%;
+  max-height: 540px;
+  height: 100%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EAEAEA;
+}
+
+.catalog__link {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.catalog__item {
+  margin: 0px 15px;
+  margin-bottom: 50px;
+  width: calc(33.333% - 30px);
 }
 /*# sourceMappingURL=style.css.map */

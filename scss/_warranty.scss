@@ -1,0 +1,56 @@
+.warranty {
+    padding: 45px 0px 60px 0px;
+    background-color: #2D2D2D;
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__block {
+        max-width: 346px;
+        width: 100%;
+        text-align: center;
+    }
+    &__block:not(:last-of-type) {
+        margin-right: 30px;
+    }
+    &__block span {
+        font-family: $font-playFair;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 140px;
+        line-height: 140%;
+        /* identical to box height, or 196px */
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.2);
+        margin-bottom: -75px;
+        display: block;
+    }
+    &__block p:nth-child(2) {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 140%;
+        /* identical to box height, or 35px */
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    &__block p:nth-child(3) {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        /* or 24px */
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+    &__img {
+        position: absolute;
+        top: -135%;
+        left: -5%;
+    }
+}

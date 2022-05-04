@@ -36,6 +36,10 @@
             width: 100%;
             display: flex;
             align-items: center;
+            cursor: pointer;
+        }
+        form>button>span:hover {
+            color: #e40039;
         }
         form>button>span {
             font-family: $font-lato;
@@ -49,6 +53,8 @@
         }
     }
     &__input {
+        padding: 10px;
+        outline: none;
         height: 38px;
         max-width: 345px;
         width: 100%;
@@ -58,30 +64,13 @@
         border-top: none;
         border-bottom: 1px solid #2D2D2D;
         margin-bottom: 30px;
-        &::-webkit-input-placeholder {
+        @include placeholder {
             font-family: $font-lato;
             font-style: normal;
             font-weight: 400;
             font-size: 17px;
             line-height: 140%;
-            color: #2D2D2D;
-        }
-        &::-moz-placeholder {
-            font-family: $font-lato;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 140%;
-            color: #2D2D2D;
-        }   
-        &:-ms-input-placeholder {
-            font-family: $font-lato;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 140%;
-            color: #2D2D2D;
-        }
-            
+            color: #2D2D2D; 
+        } 
     }
 }

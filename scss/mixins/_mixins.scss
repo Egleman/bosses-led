@@ -1,0 +1,37 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+}
+
+@mixin desktop-xlg {
+    @media (max-width: 1730px) {
+         @content;
+    }
+}
+@mixin desktop-lg {
+    @media (max-width: 1470px) {
+         @content;
+    }
+}
+@mixin desktop-md {
+    @media (max-width: 1230px) {
+         @content;
+    }
+}
+@mixin laptop {
+    @media (max-width: 1022px) {
+        @content;
+    }
+}
+@mixin tablets {
+    @media (max-width: 798px) {
+        @content;
+    }
+}
+@mixin phones {
+   @media (max-width: 606px) {
+        @content;
+   }
+}

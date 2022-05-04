@@ -3,6 +3,7 @@
     width: 100%;
     z-index: 2;
     padding-top: 40px;
+    transition: 0.5s all;
     &__link-lato-700 {
         font-family: $font-lato;
         font-style: normal;
@@ -11,6 +12,9 @@
         line-height: 24px;
         text-transform: uppercase;
         color: #FFFFFF;
+        @include desktop-lg {
+            font-size: 12px;
+        }
     }
     &__inner {
         display: flex;
@@ -19,16 +23,31 @@
     &__left {
         display: flex;
         align-items: center;
+        @include tablets {
+            order: 2;
+        }
     }
+    &__center {
+        @include tablets {
+            order: 1;
+        }
+    }
+
     &__list {
         display: flex;
         list-style: none;
     }
     &__list li:not(:last-of-type) {
         margin-right: 30px;
+        @include desktop-md {
+            margin-right: 30px;
+        }
     }
     &__list-last {
         margin-right: 50px;
+        @include desktop-md {
+            margin-right: 15px;
+        }
     }
     &__list-right {
         display: flex;
@@ -51,9 +70,18 @@
     }
     &__list-first-child {
         margin-right: 115px;
+        @include desktop-xlg {
+            margin-right: 70px;
+        }
+        @include desktop-lg {
+            margin-right: 25px;
+        }
     }
     &__acount {
         margin-right: 55px;
+        @include desktop-lg {
+            margin-right: 25px;
+        }
     }
     
     &__link-lato-400 {
@@ -70,13 +98,16 @@
     &__right {
         display: flex;
         align-items: center;
+        @include tablets {
+            display: none;
+        }
     }
     &__menu {
         z-index: 1;
         padding: 35px 0px 90px 0px;
         background-color: black;
         position: absolute;
-        top: -200%;
+        top: -400%;
         width: 100%;
         transition: 0.5s all;
         opacity: 0;
@@ -88,6 +119,9 @@
         &:not(:last-of-type) {
             margin-right: 30px;
         }
+        @include desktop-md {
+            margin-right: 15px;
+        }
     }
     &__menu-group {
         margin-bottom: 30px;
@@ -98,6 +132,13 @@
         line-height: 140%;
         text-transform: uppercase;
         display: block;
+        @include desktop-md {
+            font-size: 12px;
+        }
+        @include laptop {
+            margin-bottom: 20px;
+            font-size: 10px;
+        }
     }
     &__menu-block>ul>li:not(:last-of-type) {
         margin-bottom: 10px;
@@ -110,11 +151,178 @@
         line-height: 140%;
         /* or 24px */
         color: #FFFFFF;
+        @include desktop-md {
+            font-size: 12px;
+        }
     }
-        
+    &__search {
+        @include laptop {
+            display: none;
+        }
+    }
+    &__search-full-laptop {
+        margin-bottom: 50px;
+    }
+    
+    &__search-full {
+        display: flex;
+    }
+    &__search-full>input {
+        max-width: 245px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: rgba(196, 196, 196, 0.2);
+        padding: 15px;
+        color: #fff;
+        @include placeholder {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+        @include desktop-md {
+            max-width: 135px;
+        }
+        @include laptop {
+            max-width: 100%;
+        }
+    }
+    &__search-full>button {
+        min-width: 50px;
+        height: 50px;
+        background-color: #FF1E56;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+    }
+    &__nav {
+        @include desktop-md{
+            display: none;
+        }
+    }
+    &__hamburger-menu {
+        margin-right: 50px;
+        display: none;
+        @include desktop-md {
+            display: block;
+        }
+        @include tablets {
+            margin-right: 0px;
+        }
+    }
+
+    //Мобильное меню
+    &__name-wr {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        img {
+            width: 15px;
+            height: 15px;
+            transition: 0.5s all;
+        }
+    }
+    &__name-link-group {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__sub-name-link-group {
+        display: flex;
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__link-mobile {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    &__sublist {
+        padding-left: 15px;
+        transition: 0.5s all;
+        height: 0;
+        transform: scaleY(0);
+        opacity: 0;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    &__subgroup {
+        transition: 0.5s all;
+        height: 0;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    &__item {
+        margin: 15px 0px;
+    }
+    &__acount-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 230px;
+        width: 100%;
+        margin-bottom: 40px;
+        p {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &__social-block {
+        max-width: 180px;
+        width: 100%;
+    }
+    &__time {
+        margin-right: 0px;
+    }
+    &__time:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+    &__call {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
+
+.rotate-img {
+    transform: rotate(45deg);
+}
+.active-mobile-ul {
+    opacity: 1;
+    height: auto;
+    transform: scaleY(1);
+    padding: 25px 15px;
 }
 .d-none {
     display: none;
+}
+.active-menu {
+    top: 100% !important;
+    opacity: 1 !important;
 }
 .active-link {
     font-family: $font-lato;
@@ -122,11 +330,38 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 140%;
-    /* identical to box height, or 24px */
-
     text-transform: uppercase;
     padding-bottom: 15px;
-
     color: rgba(255, 255, 255, 0.5) !important;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    @include desktop-md {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+}
+.desktop-menu {
+    margin-bottom: 30px;
+    display: none;
+    @include desktop-md {
+        display: flex;
+    }
+}
+.laptop {
+    display: none;
+    margin-bottom: 50px;
+    @include laptop {
+        display: flex;
+    }
+}
+.container-desktop {
+    @include tablets {
+        display: none;
+    }
+}
+.container-mobile {
+    display: none;
+    flex-direction: column;
+    @include tablets {
+        display: flex;
+    }
 }

@@ -1,4 +1,4 @@
-
+@import './mixins/mixins';
 
 * {
     margin: 0;
@@ -21,6 +21,8 @@ $font-lato: 'Lato', sans-serif;
 $font-playFair: 'Playfair Display', serif;
 $font-color: #fff;
 
+@import './mod/mod';
+@import './hamburger-desktop';
 @import './footer';
 @import './title';
 @import './header';
@@ -29,3 +31,34 @@ $font-color: #fff;
 @import './warranty';
 @import './catalog';
 @import './feedback';
+
+@media (max-width: 1730px) {
+    .container {
+        max-width: 1470px;
+    }
+}
+@media (max-width: 1470px) {
+    .container {
+        max-width: 1230px;
+    }
+}
+@media (max-width: 1230px) {
+    .container {
+        max-width: 1022px;
+    }
+}
+@media (max-width: 1022px) {
+    .container {
+        max-width: 798px;
+    }
+}
+@media (max-width: 798px) {
+    .container {
+        max-width: 606px;
+    }
+}
+@media (max-width: 606px) {
+    .container {
+        max-width: 405px;
+    }
+}

@@ -2,10 +2,26 @@
     position: relative;
     padding: 340px 0px 280px 0px;
     background: linear-gradient(356.6deg, #2D2D2D 7.37%, rgba(0, 0, 0, 0) 71.65%), linear-gradient(130.37deg, rgba(0, 0, 0, 0.6) 44.27%, rgba(0, 0, 0, 0) 96.65%), url('../images/background/background-banner.png') no-repeat center/cover;
-    // transform: matrix(-1, 0, 0, 1, 0, 0);
+    @include laptop {
+        padding: 300px 0px 50px 0px;
+    }
+    @include tablets {
+        padding: 300px 0px 10px 0px;
+    }
+    @include phones {
+        background: #2D2D2D url("../images/background/led-823383_1920 1.png") no-repeat 0px 140px / contain;
+        padding: 360px 0px 10px 0px;
+    }
+    @include desktop-lg {
+        padding: 300px 0px 50px 0px;
+    }
     &__inner {
         display: flex;
         justify-content: center;
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__text-block {
         max-width: 685px;
@@ -14,39 +30,90 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        img {
+            max-width: 50px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            @include laptop {
+                display: none;
+            }
+        }
+        h1 {
+            font-family: $font-playFair;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 130%;
+            /* or 71px */
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            margin-bottom: 50px;
+            @include laptop {
+                font-size: 30px;
+            }
+            @include tablets {
+                font-size: 25px;
+            }
+        }
+        p {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            /* or 22px */
+            text-align: center;
+            color: #FFFFFF;
+            @include tablets {
+                margin-bottom: 30px;
+            }
+            @include phones {
+                font-size: 15px;
+            }
+        }
+        a {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FF1E56;
+            display: none;
+            max-width: 170px;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            align-items: center;
+            @include tablets {
+                display: flex;
+                img {
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        @include laptop {
+            max-width: 480px;
+        }
+        @include tablets {
+            max-width: 360px;
+        }
     }
-    &__text-block img {
-        max-width: 50px;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 30px;
-    }
-    &__text-block h1 {
-        font-family: $font-playFair;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 55px;
-        line-height: 130%;
-        /* or 71px */
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-        margin-bottom: 50px;
-    }
-    &__text-block p {
-        font-family: $font-lato;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
-        /* or 22px */
-        text-align: center;
-        color: #FFFFFF;
-    }
+    
     &__flashlight {
         position: absolute;
         left: 0%;
         top: 27%;
+        z-index: 0;
+        @include tablets {
+            display: none;
+        }
     }
     
 }
@@ -58,6 +125,13 @@
     align-items: center;
     top: 43%;
     left: 0%;
+    z-index: 1;
+    @include laptop {
+        top: 20%;
+    }
+    @include tablets {
+        display: none;
+    }
 }
 .social-block a:not(:last-of-type) {
     margin-bottom: 15px;
@@ -66,10 +140,22 @@
     position: absolute;
     top: 70%;
     right: 0%;
+    @include laptop {
+        top: 60%;
+    }
+    @include tablets {
+        position: static;
+        max-width: 100px;
+        width: 100%;
+    }
 }
 .message-progressbar__list {
     display: flex;
     flex-direction: column;
+    @include tablets {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 .message-progressbar__item {
     width: 15px;

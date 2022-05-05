@@ -1,9 +1,20 @@
 .warranty {
     padding: 45px 0px 60px 0px;
     background-color: #2D2D2D;
+    @include tablets {
+        padding: 15px 0px 15px 0px;
+    }
     &__inner {
         display: flex;
         justify-content: flex-end;
+        @include desktop-lg {
+            justify-content: space-between;
+        }
+        @include tablets {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__block {
         max-width: 346px;
@@ -12,6 +23,9 @@
     }
     &__block:not(:last-of-type) {
         margin-right: 30px;
+        @include desktop-lg {
+            margin-right: 0px;
+        }
     }
     &__block span {
         font-family: $font-playFair;
@@ -47,10 +61,20 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+        @include laptop {
+            font-size: 15px;
+        }
     }
     &__img {
         position: absolute;
         top: -135%;
         left: -5%;
+        @include desktop-xlg {
+            max-width: 480px;
+            top: -50%;
+        }
+        @include desktop-lg {
+            display: none;
+        }
     }
 }

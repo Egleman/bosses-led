@@ -1,6 +1,15 @@
 .feedback {
     padding: 120px 0px;
     background: url('../images/background/feedback.png') no-repeat center/cover;
+    @include tablets {
+        padding: 60px 0px;
+    }
+    &__inner {
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+    }
     &__block {
         padding: 50px;
         background: #EAEAEA;
@@ -64,6 +73,7 @@
         border-top: none;
         border-bottom: 1px solid #2D2D2D;
         margin-bottom: 30px;
+        font-size: 20px;
         @include placeholder {
             font-family: $font-lato;
             font-style: normal;

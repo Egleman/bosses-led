@@ -4,6 +4,9 @@
     z-index: 2;
     padding-top: 40px;
     transition: 0.5s all;
+    @include phones {
+        background-color: black; 
+    }
     &__link-lato-700 {
         font-family: $font-lato;
         font-style: normal;
@@ -52,6 +55,7 @@
     &__list-right {
         display: flex;
         list-style: none;
+        align-items: center
     }
     a {
         color: $font-color;
@@ -59,6 +63,9 @@
     &__logo {
         max-width: 185px;
         width: 100%;
+        @include phones {
+            max-width: 130px;
+        }
     }
     &__phone {
         max-width: 45px;
@@ -107,7 +114,7 @@
         padding: 35px 0px 90px 0px;
         background-color: black;
         position: absolute;
-        top: -400%;
+        top: -670%;
         width: 100%;
         transition: 0.5s all;
         opacity: 0;
@@ -220,7 +227,6 @@
     &__name-wr {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
         img {
             width: 15px;
             height: 15px;
@@ -256,6 +262,7 @@
     }
     &__sublist {
         padding-left: 15px;
+        padding-top: 15px;
         transition: 0.5s all;
         height: 0;
         transform: scaleY(0);
@@ -269,9 +276,10 @@
         height: 0;
         transform: scaleY(0);
         opacity: 0;
+        padding: 5px 0px 0px 15px;
     }
     &__item {
-        margin: 15px 0px;
+        margin-bottom: 15px;
     }
     &__acount-mobile {
         display: flex;
@@ -320,14 +328,13 @@
     opacity: 1;
     height: auto;
     transform: scaleY(1);
-    padding: 25px 15px;
 }
 .d-none {
     display: none;
 }
 .active-menu {
-    top: 100% !important;
-    opacity: 1 !important;
+    top: 100%;
+    opacity: 1;
 }
 .active-link {
     font-family: $font-lato;

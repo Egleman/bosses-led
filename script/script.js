@@ -17,6 +17,17 @@ const plusImg = document.querySelectorAll('.plus-img');
 const footerMenuButton = document.querySelector('#footer__menu-toggle');
 const footerMobileUl = document.querySelector('.footer__list-mobile');
 
+// var observer = new MutationObserver(function(mutations) {
+//     mutations.forEach(function(mutationRecord) {
+//         if (window.innerWidth < 606) {
+//             header.style.backgroundColor = 'black';
+//         }
+//     });    
+// });
+
+// var target = document.querySelector('.header');
+// observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+
 footerMenuButton.addEventListener('change', () => {
     if (footerMenuButton.checked) {
         footerMobileUl.classList.add('active-mobile-ul');

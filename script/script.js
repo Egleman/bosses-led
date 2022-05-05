@@ -17,17 +17,6 @@ const plusImg = document.querySelectorAll('.plus-img');
 const footerMenuButton = document.querySelector('#footer__menu-toggle');
 const footerMobileUl = document.querySelector('.footer__list-mobile');
 
-// var observer = new MutationObserver(function(mutations) {
-//     mutations.forEach(function(mutationRecord) {
-//         if (window.innerWidth < 606) {
-//             header.style.backgroundColor = 'black';
-//         }
-//     });    
-// });
-
-// var target = document.querySelector('.header');
-// observer.observe(target, { attributes : true, attributeFilter : ['style'] });
-
 footerMenuButton.addEventListener('change', () => {
     if (footerMenuButton.checked) {
         footerMobileUl.classList.add('active-mobile-ul');
@@ -72,7 +61,12 @@ document.addEventListener('click', (e) => {
             })
         } else if (!headerMenu.contains(e.target) && !header.contains(e.target)) {
             headerMenu.classList.remove('active-menu');
-            header.style.backgroundColor = 'transparent';
+            if (window.innerWidth <= 606) {
+                header.style.backgroundColor = 'black';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+            
             buttons.forEach(btn => {
                 if (btn.classList.contains('active-link')) {
                     btn.classList.remove('active-link');
@@ -109,7 +103,11 @@ document.addEventListener('click', (e) => {
                 menuToggle.checked = false;
             }
             headerMenu.classList.remove('active-menu');
-            header.style.backgroundColor = 'transparent';
+            if (window.innerWidth <= 606) {
+                header.style.backgroundColor = 'black';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
             deskotMenuButtons.forEach(btn => {
                 if (btn.classList.contains('active-link')) {
                     btn.classList.remove('active-link');
@@ -131,7 +129,11 @@ menuToggle.addEventListener('change', () => {
         header.style.backgroundColor = 'black';
     } else {
         headerMenu.classList.remove('active-menu');
-        header.style.backgroundColor = 'transparent';
+        if (window.innerWidth <= 606) {
+            header.style.backgroundColor = 'black';
+        } else {
+            header.style.backgroundColor = 'transparent';
+        }
         deskotMenuButtons.forEach(btn => {
             if (btn.classList.contains('active-link')) {
                 btn.classList.remove('active-link');

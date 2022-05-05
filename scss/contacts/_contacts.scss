@@ -1,0 +1,38 @@
+.contacts__text{
+    max-width: 350px;
+    width: 100%;
+    h2 {
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    a {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+.contacts__img {
+    max-width: 1120px;
+    width: 100%;
+}
+.contact_inner {
+    margin-bottom: 70px;
+}

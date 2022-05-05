@@ -144,6 +144,10 @@
         top: 60%;
     }
     @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: block;
         position: static;
         max-width: 100px;
         width: 100%;

@@ -24,6 +24,9 @@
             line-height: 140%;
             color: #2D2D2D;
             margin-bottom: 50px;
+            @include phones {
+                font-size: 17px;
+            }
         }
         p:nth-child(2) {
             font-family: $font-lato;
@@ -33,6 +36,9 @@
             line-height: 140%;
             color: #2D2D2D;
             margin-bottom: 30px;
+            @include phones {
+                font-size: 12px;
+            }
         }
         form {
             display: flex;
@@ -46,6 +52,7 @@
             display: flex;
             align-items: center;
             cursor: pointer;
+            
         }
         form>button>span:hover {
             color: #e40039;
@@ -59,6 +66,9 @@
             text-transform: uppercase;
             color: #FF1E56;
             margin-right: 15px;
+            @include phones {
+                font-size: 15px;
+            }
         }
     }
     &__input {
@@ -74,6 +84,9 @@
         border-bottom: 1px solid #2D2D2D;
         margin-bottom: 30px;
         font-size: 20px;
+        @include phones {
+            font-size: 17px;
+        }
         @include placeholder {
             font-family: $font-lato;
             font-style: normal;
@@ -81,6 +94,9 @@
             font-size: 17px;
             line-height: 140%;
             color: #2D2D2D; 
+            @include phones {
+                font-size: 15px;
+            }
         } 
     }
 }

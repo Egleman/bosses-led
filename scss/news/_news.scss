@@ -1,0 +1,64 @@
+.news__history {
+    max-width: 370px !important;
+    width: 100%;
+}
+.news__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    @include tablets {
+        margin: 0;
+    }
+}
+.news__item {
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    @include tablets {
+        width: calc(50% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    @include phones {
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+    }
+}
+.news__time {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.news__desc {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.read-more {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FF1E56;
+    display: flex;
+    align-items: center;
+    span {
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,34 @@
+.header__product {
+    background: #2D2D2D;
+}
+.banner__product{
+    height: 179px;
+    @include phones {
+        height: 140px;
+    }
+}
+.catalog__history {
+    display: flex;
+    max-width: 680px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    @include laptop {
+        max-width: 530px;
+    }
+}
+.font-style {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: #FFFFFF;
+    @include laptop {
+        font-size: 19px;
+    }
+    @include phones {
+        font-size: 19px;
+    }
+}

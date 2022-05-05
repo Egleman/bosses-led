@@ -22,16 +22,18 @@ $font-playFair: 'Playfair Display', serif;
 $font-color: #fff;
 
 @import './mod/mod';
-@import './hamburger-mobile';
-@import './hamburger-desktop';
-@import './footer';
-@import './title';
-@import './header';
-@import './message';
-@import './story';
-@import './warranty';
-@import './catalog';
-@import './feedback';
+@import './index/hamburger-mobile';
+@import './index/hamburger-desktop';
+@import './index/footer';
+@import './index/title';
+@import './index/header';
+@import './index/message';
+@import './index/story';
+@import './index/warranty';
+@import './index/catalog';
+@import './index/feedback';
+
+@import './product/product';
 
 @media (max-width: 1730px) {
     .container {

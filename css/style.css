@@ -1892,6 +1892,61 @@ a {
   color: #2D2D2D;
 }
 
+.header__product {
+  background: #2D2D2D;
+}
+
+.banner__product {
+  height: 179px;
+}
+
+@media (max-width: 606px) {
+  .banner__product {
+    height: 140px;
+  }
+}
+
+.catalog__history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 680px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1022px) {
+  .catalog__history {
+    max-width: 530px;
+  }
+}
+
+.font-style {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1022px) {
+  .font-style {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 606px) {
+  .font-style {
+    font-size: 19px;
+  }
+}
+
 @media (max-width: 1730px) {
   .container {
     max-width: 1470px;

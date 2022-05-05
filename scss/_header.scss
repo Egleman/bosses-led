@@ -308,6 +308,11 @@
     }
 }
 
+.hidden-search {
+    @include laptop {
+        display: none;
+    }
+}
 .rotate-img {
     transform: rotate(45deg);
 }

@@ -12,7 +12,6 @@
     }
     
     &__time {
-        margin-right: 100px;
         p {
             display: flex;
             align-items: center;
@@ -20,6 +19,9 @@
         }
         p:not(:last-of-type) {
             margin-bottom: 35px;
+            @include tablets {
+                margin-bottom: 20px;
+            }
         }
         p>img {
             margin-right: 20px;
@@ -31,16 +33,25 @@
     &__social-block {
         display: flex;
         justify-content: space-between;
+        @include tablets {
+            margin-bottom: 40px;
+        }
     }
     &__logo {
         max-height: 135px;
         height: 100%;
+        @include desktop-lg {
+            height: auto;
+        }
     }
     &__top {
         margin-bottom: 40px;
     }
     &__bottom {
         display: flex;
+        @include desktop-md {
+            display: none;
+        }
     }
     &__bottom a {
         font-family: $font-lato;
@@ -56,10 +67,52 @@
     &__bottom img {
         margin-right: 10px;
     }
+    &__bottom-laptop {
+        display: none;
+        justify-content: space-between;
+        img {
+            margin-right: 10px;
+        }
+        a {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include laptop {
+                font-size: 10px;
+            }
+            @include tablets {
+                justify-content: flex-start;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+        @include desktop-md {
+            display: flex;
+        }
+        @include tablets {
+            flex-direction: column;
+        }
+    }
     &__image {
-        max-width: 34%;
+        max-width: 580px;
         width: 100%;
         padding-right: 15px;
+        @include desktop-xlg {
+            max-width: 350px;
+        }
+        @include desktop-lg {
+            max-width: 185px;
+            padding-right: 30px;
+        }
+        @include laptop {
+            display: none;
+        }
     }
     &__space {
         display: flex;
@@ -81,6 +134,46 @@
         display: flex;
         justify-content: space-between;
         padding-left: 60px;
+    }
+    &__top-right {
+        display: flex;
+        justify-content: space-between;
+        max-width: 547px;
+        width: 100%;
+        @include desktop-lg {
+            max-width: 455px;
+        }
+    }
+    &__laptop-link {
+        @include desktop-md {
+            margin-bottom: 15px !important;
+        }
+    }
+    &__laptop-font-size {
+        @include desktop-md {
+            font-size: 12px !important;
+        }
+    }
+
+    //mobile footer
+    &__mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__list-mobile {
+        transition: 0.5s all;
+        height: 0;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    &__item {
+        margin: 0px 0px 15px 0px !important;
+        color: transparent;
+    }
+    &__name-wr {
+        margin-bottom: 0px !important;
     }
     
 }

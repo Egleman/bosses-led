@@ -31,7 +31,7 @@
                     <a href="#" class="header__search">
                         <img src="./images/service-icons/search.png" alt="img">        
                     </a>
-                    <form action="#" class="header__search-full d-none">
+                    <form action="#" class="header__search-full d-none hidden-search">
                         <input type="text" placeholder="Введите текст">
                         <button type="submit">
                             <img src="./images/service-icons/search.png" alt="img">
@@ -378,7 +378,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container container-desktop">
             <div class="footer__inner">
                 <div class="footer__top">
                     <div class="footer__block">
@@ -387,7 +387,7 @@
                         </div>
                         <div class="footer__space">
                             <div class="footer__product">
-                                <p class="footer__link header__menu-group">Товары</p>
+                                <p class="footer__link header__menu-group footer__laptop-link">Товары</p>
                                 <ul>
                                     <li><a href="" class="footer-link header__menu-link">Светильники</a></li>
                                     <li><a href="" class="footer-link header__menu-link">Трековое освещение</a></li>
@@ -397,7 +397,7 @@
                                 </ul>
                             </div>
                             <div class="footer__product">
-                                <p class="footer__link header__menu-group">Покупателям</p>
+                                <p class="footer__link header__menu-group footer__laptop-link">Покупателям</p>
                                 <ul>
                                     <li><a href="" class="footer-link header__menu-link">Оплата и доставка</a></li>
                                     <li><a href="" class="footer-link header__menu-link">Возврат и обмен</a></li>
@@ -406,7 +406,7 @@
                                 </ul>
                             </div>
                             <div class="footer__product">
-                                <p class="footer__link header__menu-group">О компании</p>
+                                <p class="footer__link header__menu-group footer__laptop-link">О компании</p>
                                 <ul>
                                     <li><a href="" class="footer-link header__menu-link">Наша история</a></li>
                                     <li><a href="" class="footer-link header__menu-link">Новости</a></li>
@@ -417,22 +417,25 @@
                             </div>
                         </div>
                         
-                        <div class="footer__time">
-                            <p><img src="./images/service-icons/clock.png" alt="img" class="footer__clock">Пн.-Вс. 09-00 - 19:00</p>
-                            <p><img src="./images/service-icons/marker.png" alt="img" class="footer__clock">Ввести адрес</p>
-                        </div>
-                        <div class="footer__contacts">
-                            <a href="tel:+792468246884" class="header__link header__link-lato-400 footer__call-button">
-                                <img src="./images/service-icons/call-button.png" alt="" class="header__phone">
-                                +79 246 824 68 84                           
-                            </a>
-                            <div class="footer__social-block">
-                                <a href="#"><img src="./images/social/telegram.png" alt="telegramm"></a>
-                                <a href="#"><img src="./images/social/insta-2.png" alt="instagramm"></a>
-                                <a href="#"><img src="./images/social/viber.png" alt="viber"></a>
-                                <a href="#"><img src="./images/social/whatsapp.png" alt="whatsapp"></a>
+                        <div class="footer__top-right">
+                            <div class="footer__time">
+                                <p class="footer__laptop-font-size"><img src="./images/service-icons/clock.png" alt="img" class="footer__clock">Пн.-Вс. 09-00 - 19:00</p>
+                                <p class="footer__laptop-font-size"><img src="./images/service-icons/marker.png" alt="img" class="footer__clock">Ввести адрес</p>
+                            </div>
+                            <div class="footer__contacts">
+                                <a href="tel:+792468246884" class="header__link header__link-lato-400 footer__call-button footer__laptop-font-size">
+                                    <img src="./images/service-icons/call-button.png" alt="" class="header__phone">
+                                    +79 246 824 68 84                           
+                                </a>
+                                <div class="footer__social-block">
+                                    <a href="#"><img src="./images/social/telegram.png" alt="telegramm"></a>
+                                    <a href="#"><img src="./images/social/insta-2.png" alt="instagramm"></a>
+                                    <a href="#"><img src="./images/social/viber.png" alt="viber"></a>
+                                    <a href="#"><img src="./images/social/whatsapp.png" alt="whatsapp"></a>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="footer__bottom">
@@ -446,6 +449,125 @@
                         <a href="#">Политика конфиденциальности</a>
                     </div>  
                 </div>
+                <div class="footer__bottom-laptop">
+                    <a href="#"><img src="./images/service-icons/copyright.png" alt="img">BossesLed. Все права защищены</a>
+                    <a href="#">Согласие на обработку персональных данных</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Юридическая информация</a>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+        <div class="container container-mobile">
+            <div class="footer__mobile-top">
+                <div class="footer__mobile-menu">
+                    <img src="./images/logo-mobile.png" alt="img">
+                    <div class="footer__hamburger-menu">
+                        <input id="footer__menu-toggle" type="checkbox" />
+                        <label class="footer__menu-btn" for="footer__menu-toggle">
+                          <span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__list-mobile footer__list-mobile">
+                <li class="header__item footer__item">
+                    <div class="header__name-wr footer__name-wr">
+                        <a href="#" class="header__name-link-group">ТОВАРЫ</a>
+                        <img src="./images/service-icons/plus.png" alt="img" class="plus-img">
+                    </div>
+                    <ul class="header__sublist">
+                        <li>
+                            <a href="#" class="header__sub-name-link-group">Светильники</a>
+                            <ul class="header__subgroup">
+                                <li><a href="#" class="header__link-mobile">Накладные</a></li>
+                                <li><a href="#" class="header__link-mobile">Встроенные</a></li>
+                                <li><a href="#" class="header__link-mobile">Подвесные</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="header__sub-name-link-group">трековое освещение</a>
+                            <ul class="header__subgroup">
+                                <li><a href="#" class="header__link-mobile">Однофазные</a></li>
+                                <li><a href="#" class="header__link-mobile">Трехфазные</a></li>
+                                <li><a href="#" class="header__link-mobile">Магнитные</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="header__sub-name-link-group">светодиодные ленты</a>
+                            <ul class="header__subgroup">
+                                <li><a href="#" class="header__link-mobile">Монохромные</a></li>
+                                <li><a href="#" class="header__link-mobile">RGB</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="header__sub-name-link-group">профильное освещение</a>
+                            <ul class="header__subgroup">
+                                <li><a href="#" class="header__link-mobile">Системы для гипсокартона</a></li>
+                                <li><a href="#" class="header__link-mobile">Системы для натяжных потолков</a></li>
+                                <li><a href="#" class="header__link-mobile">Подвесные</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="header__sub-name-link-group">оборудование</a>
+                            <ul class="header__subgroup">
+                                <li><a href="#" class="header__link-mobile">Блоки питания</a></li>
+                                <li><a href="#" class="header__link-mobile">Контроллеры</a></li>
+                                <li><a href="#" class="header__link-mobile">Пульты</a></li>
+                                <li><a href="#" class="header__link-mobile">Усилители</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__item footer__item">
+                    <div class="header__name-wr footer__name-wr">
+                        <a href="#" class="header__name-link-group">Покупателям</a>
+                        <img src="./images/service-icons/plus.png" alt="img" class="plus-img">
+                    </div>
+                    <ul class="header__sublist">
+                        <li><a href="#" class="header__link-mobile">Оплата и доставка</a></li>
+                        <li><a href="#" class="header__link-mobile">Возврат и обмен</a></li>
+                        <li><a href="#" class="header__link-mobile">Служба поддержки</a></li>
+                        <li><a href="#" class="header__link-mobile">Гарантия</a></li>
+                    </ul>
+                </li>
+                <li class="header__item footer__item">
+                    <div class="header__name-wr footer__name-wr">
+                        <a href="#" class="header__name-link-group">О компании</a>
+                        <img src="./images/service-icons/plus.png" alt="img" class="plus-img">
+                    </div>
+                    <ul class="header__sublist">
+                        <li><a href="#" class="header__link-mobile">Наша история</a></li>
+                        <li><a href="#" class="header__link-mobile">Новости</a></li>
+                        <li><a href="#" class="header__link-mobile">Партнеры</a></li>
+                        <li><a href="#" class="header__link-mobile">Клиенты</a></li>
+                        <li><a href="#" class="header__link-mobile">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header__call">
+                <a href="tel:+792468246884" class="header__link header__link-lato-400">
+                    <img src="./images/service-icons/call-button.png" alt="" class="header__phone">
+                    +79 246 824 68 84                           
+                </a>
+                <a href="#"><img src="./images/service-icons/korzina.png" alt="img"></a>
+            </div>
+            <div class="footer__time header__time">
+                <p><img src="./images/service-icons/clock.png" alt="img" class="footer__clock">Пн.-Вс. 09-00 - 19:00</p>
+                <p><img src="./images/service-icons/marker.png" alt="img" class="footer__clock">Ввести адрес</p>
+            </div>
+            <div class="footer__social-block header__social-block">
+                <a href="#"><img src="./images/social/telegram.png" alt="telegramm"></a>
+                <a href="#"><img src="./images/social/insta-2.png" alt="instagramm"></a>
+                <a href="#"><img src="./images/social/viber.png" alt="viber"></a>
+                <a href="#"><img src="./images/social/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <div class="footer__bottom-laptop">
+                <a href="#">Согласие на обработку персональных данных</a>
+                <a href="#">Cookies</a>
+                <a href="#">Юридическая информация</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#"><img src="./images/service-icons/copyright.png" alt="img">BossesLed. Все права защищены</a>   
             </div>
         </div>
     </footer>

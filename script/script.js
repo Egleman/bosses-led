@@ -14,15 +14,28 @@ const firstUl = document.querySelectorAll('.header__sublist');
 const secondUl = document.querySelectorAll('.header__subgroup');
 const plusImg = document.querySelectorAll('.plus-img');
 
+const footerMenuButton = document.querySelector('#footer__menu-toggle');
+const footerMobileUl = document.querySelector('.footer__list-mobile');
+
+footerMenuButton.addEventListener('change', () => {
+    if (footerMenuButton.checked) {
+        footerMobileUl.classList.add('active-mobile-ul');
+    } else {
+        footerMobileUl.classList.remove('active-mobile-ul');
+    }
+})
+
 mobileMenuButtons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
         firstUl[index].classList.toggle('active-mobile-ul');
         plusImg[index].classList.toggle('rotate-img');
     })
 })
 
 subMobileMenuButtons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
         secondUl[index].classList.toggle('active-mobile-ul');
     })
 })

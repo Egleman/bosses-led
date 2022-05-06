@@ -1,0 +1,28 @@
+.message__error {
+    background: #2D2D2D;
+    height: 100vh;
+}
+.message__error__text-block {
+    img {
+        max-width: 459px;
+        margin-bottom: 0px;
+    }
+    p {
+        font-family: $font-playFair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 140%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+    }
+}
+.message__error__flashlight {
+    bottom: -60%;
+    left:63%;
+    top: 0;
+    transform: rotate(-90deg);
+}
+main {
+    overflow: hidden;
+}

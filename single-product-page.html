@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script/product.js" defer></script>
+    <script src="./script/swiper.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
     <title>Document</title>
 </head>
 <body>
@@ -250,42 +254,162 @@
     </header>
     <main class="main">
         <section class="banner__product"></section>
-        <section class="story">
+        <section class="single">
             <div class="container">
-                <div class="news__history catalog__history">
-                    <a href="" class="font-style">Главная</a>
-                    <span class="font-style">-</span>
-                    <a href="" class="font-style">О компании</a>
-                    <span class="font-style">-</span>
-                    <a href="" class="font-style">Новости</a>
+                <div class="catalog__history">
+                    <a href="" class="font-style black">Главная</a>
+                    <span class="font-style black">-</span>
+                    <a href="" class="font-style black">Товары</a>
+                    <span class="font-style black">-</span>
+                    <a href="" class="font-style black">Светильники</a>
+                    <span class="font-style black">-</span>
+                    <a href="" class="font-style black">Встроенные светильники</a>
                 </div>
-                <div class="story__inner contact_inner">
-                    
-                    <div class="story__text contacts__text">
-                        <h2 class="title">Bosses Led</h2>
-                        <p>Адрес</p>
-                        <div class="footer__time header__time">
-                            <p><img src="./images/service-icons/clock.png" alt="img" class="footer__clock">Пн.-Вс. 09-00 - 19:00</p>
-                            <p><img src="./images/service-icons/marker.png" alt="img" class="footer__clock">Ввести адрес</p>
+                <div class="single__top">
+                    <div class="single__top-tabs">
+                        <div class="single__top-window">
+                            <img src="./images/single-product/tab1.png" alt="img" class="window-tabs">
+                            <img src="./images/single-product/tab2.jpg" alt="img" class="window-tabs d-none">
+                            <img src="./images/single-product/tab3.jpg" alt="img" class="window-tabs d-none">
+                            <img src="./images/single-product/tab4.jpg" alt="img" class="window-tabs d-none">
+                            <img src="./images/single-product/tab5.jpg" alt="img" class="window-tabs d-none">
                         </div>
-                        <p>Телефон</p>
-                        <a href=""><img src="./images/service-icons/phone.png" alt="img"> +79 246 824 68 84</a>
-                        <p>Мы в социальных сетях</p>
-                        <div class="footer__social-block header__social-block">
-                            <a href="#"><img src="./images/social/telegram.png" alt="telegramm"></a>
-                            <a href="#"><img src="./images/social/insta-2.png" alt="instagramm"></a>
-                            <a href="#"><img src="./images/social/viber.png" alt="viber"></a>
-                            <a href="#"><img src="./images/social/whatsapp.png" alt="whatsapp"></a>
+                        <div class="single__top-window-buttons">
+                            <img src="./images/single-product/btn1.png" alt="img" class="single-btn-tab">
+                            <img src="./images/single-product/btn2.png" alt="img" class="single-btn-tab">
+                            <img src="./images/single-product/btn3.png" alt="img" class="single-btn-tab">
+                            <img src="./images/single-product/btn4.png" alt="img" class="single-btn-tab">
+                            <img src="./images/single-product/btn5.png" alt="img" class="single-btn-tab">
                         </div>
-                        <p>Электронная почта</p>
-                        <a href=""><img src="./images/service-icons/email.png" alt="img">  name@yandex.ru</a>
                     </div>
-                    <div class=" contact__image">
-                        <img src="./images/Interior/contacts.png" alt="img" class="contacts__img">
+                    <div class="single__desc">
+                        <h1>Светильник BOSSES BSSP116CT70</h1>
+                        <p>Use high-performence COB LED, Ra>80. Aluminum heatsink and unique die casting
+                            heatsink design ensure better heat dissipation. </p>
+                        <span>Светильник</span>
+                        <div class="single__list">
+                            <ul>
+                                <li>Structure</li>
+                                <li>Model No.</li>
+                                <li>Wattage</li>
+                                <li>Luminous Flux</li>
+                                <li>Beam</li>
+                                <li>IP Ratings</li>
+                                <li>Material</li>
+                                <li>Dimension</li>
+                                <li>Cutout Hole</li>
+                                <li>Finish</li>
+                                <li>Installation</li>
+                            </ul>
+                            <ul>
+                                <li>Adjustable Down Light LED</li>
+                                <li>IBSP116CT70</li>
+                                <li>6W | 8W</li>
+                                <li>> 600lm | 800lm</li>
+                                <li>20° | 40° | 60°</li>
+                                <li>IP54</li>
+                                <li>Die casting aluminum heatsink</li>
+                                <li>Ø90mm x H 57mm</li>
+                                <li>Ø70~80mm</li>
+                                <li>White | black</li>
+                                <li>Suitable for 5~18 mm thick ceiling board</li>
+                            </ul>
+                        </div>
+                        <span>Светодиоды</span>
+                        <div class="single__list">
+                            <ul>
+                                <li>Brand</li>
+                                <li>Type</li>
+                                <li>Color Temp</li>
+                                <li>CRI</li>
+                            </ul>
+                            <ul>
+                                <li>Cree | Bridgelux</li>
+                                <li>СОВ</li>
+                                <li>2700K | 3000K | 3500K | 4000K | 5000K | 6000K</li>
+                                <li>80 | 90</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe11b8ffc8c0c4bf1b19981188ac766fb8cdef29eb7fdaa56ecc8977d3b0d49d&amp;source=constructor" width="100%" height="560" frameborder="0"></iframe>
+                <div class="single__bottom single__top">
+                    <div class="single__photometrica">
+                        <h3>Фотометрики</h3>
+                        <div class="single__image">
+                            <img src="./images/single-product/metrica.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="single__desc">
+                        <span>Control Gear</span>
+                        <p class="individ-p">Remote constant current LED driver</p>
+                        <div class="single__list">
+                            <ul>
+                                <li>Brand</li>
+                                <li>Input Voltage</li>
+                                <li>Dimming</li>
+                                <li>Remarks</li>
+
+                            </ul>
+                            <ul>
+                                <li>InBright | OEM | Lifud</li>
+                                <li>220~240Vac | 100-240Vac</li>
+                                <li>Non Dim | Dim</li>
+                                <li>Flicker-free,PF 0.5 | 0.9> 600lm | 800lm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="buy">
+            <div class="container">
+                <h2>С этим товаром также покупают</h2>
+                <img src="./images/service-icons/arrow-story.png" alt="img" class="arrow-slider-left">
+                <img src="./images/service-icons/arrow-story.png" alt="img" class="arrow-slider-right">
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="catalog__item">
+                                <div class="catalog__img">
+                                    <img src="./images/Interior/catalog-1.png" alt="card">
+                                </div>
+                                <p class="catalog__link black">светильники</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="catalog__item">
+                                <div class="catalog__img">
+                                    <img src="./images/Interior/catalog-2.png" alt="card">
+                                </div>
+                                <p class="catalog__link black">светодиодные ленты</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="catalog__item">
+                                <div class="catalog__img">
+                                    <img src="./images/Interior/catalog-3.png" alt="card">
+                                </div>
+                                <p class="catalog__link black">трековое освещение</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="catalog__item">
+                                <div class="catalog__img">
+                                    <img src="./images/Interior/catalog-4.png" alt="card">
+                                </div>
+                                <p class="catalog__link black">профильное освещение</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="catalog__item">
+                                <div class="catalog__img">
+                                    <img src="./images/Interior/catalog-5.png" alt="card">
+                                </div>
+                                <p class="catalog__link black">оборудование</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -501,3 +625,8 @@
     </footer>
 </body>
 </html>
+
+
+
+
+

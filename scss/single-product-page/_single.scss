@@ -1,0 +1,107 @@
+.single {
+    padding: 60px 0px 60px 0px;
+    &__top{
+        display: flex;
+    }
+    &__top-tabs {
+        max-width: 850px;
+        width: 100%;
+        margin-right: 50px;
+    }
+    &__top-window {
+        margin-bottom: 50px;
+    }
+    &__top-window-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__desc {
+        h1 {
+            font-family: $font-playFair;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            color: #2D2D2D;
+            margin-bottom: 50px;
+        }
+        p {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            color: #2D2D2D;
+            margin-bottom: 50px;
+        }
+        span {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            color: #2D2D2D;
+            margin-bottom: 30px;
+            display: flex;
+        }
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 50px;
+        ul>li {
+            list-style: none;
+        }
+        ul:first-child {
+            margin-right: 40px; 
+            li {
+                font-family: $font-lato;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 180%;
+                letter-spacing: 0.03em;
+                color: #2D2D2D;
+            }
+        }
+        ul:nth-child(2) {
+            li {
+                font-family: $font-lato;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 180%;
+                letter-spacing: 0.03em;
+                color: #2D2D2D;
+            }
+        }
+    }
+    &__photometrica {
+        max-width: 850px;
+        width: 100%;
+        margin-right: 50px;
+        h3 {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            color: #2D2D2D;
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 709px;
+            width: 100%;
+        }
+    }
+}
+
+.black {
+    color: black !important;
+}
+.individ-p {
+    margin-bottom: 0px !important;
+}

@@ -1,0 +1,27 @@
+.buy {
+    padding: 60px 0px;
+    h2 {
+        font-family: $font-playFair;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #2D2D2D;
+        margin-bottom: 50px;
+    }
+}
+
+.arrow-slider-left {
+    position: absolute;
+    top: 385px;
+    left: -5%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.arrow-slider-right {
+    position: absolute;
+    top: 385px;
+    right: -5%;
+    cursor: pointer;
+}

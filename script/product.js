@@ -17,16 +17,24 @@ const plusImg = document.querySelectorAll('.plus-img');
 const footerMenuButton = document.querySelector('#footer__menu-toggle');
 const footerMobileUl = document.querySelector('.footer__list-mobile');
 
-// var observer = new MutationObserver(function(mutations) {
-//     mutations.forEach(function(mutationRecord) {
-//         if (window.innerWidth < 606) {
-//             header.style.backgroundColor = 'black';
-//         }
-//     });    
-// });
+const singleCard = document.querySelectorAll('.window-tabs');
+const btnCard = document.querySelectorAll('.single__btn-tab');
+const singleTabPanel = document.querySelector('.single__top-window-buttons');
 
-// var target = document.querySelector('.header');
-// observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+singleTabPanel.addEventListener('click', (e) => {
+    if (e.target.closest('.single__btn-tab')) {
+        const tabBtn = e.target.closest('.single__btn-tab');
+        btnCard.forEach((btn, index) => {
+            if (btn === tabBtn) {
+                if (singleCard[index].classList.contains('d-none')) {
+                    singleCard[index].classList.remove('d-none');
+                }
+            } else {
+                singleCard[index].classList.add('d-none');
+            }
+        })
+    }
+})
 
 footerMenuButton.addEventListener('change', () => {
     if (footerMenuButton.checked) {

@@ -1951,6 +1951,7 @@ a {
 
 .message__error {
   background: #2D2D2D;
+  overflow: hidden;
   height: 100vh;
 }
 
@@ -1976,10 +1977,6 @@ a {
   top: 0;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-}
-
-main {
-  overflow: hidden;
 }
 
 .buy {
@@ -2033,6 +2030,11 @@ main {
   margin-bottom: 50px;
 }
 
+.single__top-window img {
+  max-width: 850px;
+  width: 100%;
+}
+
 .single__top-window-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2040,6 +2042,10 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.single__top-window-buttons img {
+  cursor: pointer;
 }
 
 .single__desc h1 {
@@ -2133,14 +2139,6 @@ main {
 .single__photometrica img {
   max-width: 709px;
   width: 100%;
-}
-
-.black {
-  color: black !important;
-}
-
-.individ-p {
-  margin-bottom: 0px !important;
 }
 
 .header__product {
@@ -2339,6 +2337,14 @@ main {
 
 .contact_inner {
   margin-bottom: 70px;
+}
+
+#individ-p {
+  margin-bottom: 0px;
+}
+
+.black {
+  color: black;
 }
 
 @media (max-width: 1730px) {

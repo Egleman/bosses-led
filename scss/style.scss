@@ -22,7 +22,7 @@ $font-playFair: 'Playfair Display', serif;
 $font-color: #fff;
 
 
-@import './mod/mod';
+
 @import './index/hamburger-mobile';
 @import './index/hamburger-desktop';
 @import './index/footer';
@@ -41,6 +41,8 @@ $font-color: #fff;
 @import './product/product';
 @import './news/news';
 @import './contacts/contacts';
+
+@import './mod/mod';
 
 @media (max-width: 1730px) {
     .container {

@@ -137,17 +137,22 @@
     margin-bottom: 15px;
 }
 .message-progressbar {
-    position: absolute;
-    top: 70%;
-    right: 0%;
+    position: fixed;
+    top: 60%;
+    right: 7%; 
+    z-index: 3;
+    @include desktop-lg {
+        top: 55%;
+        right: 3%;
+    }
     @include laptop {
-        top: 60%;
+        top: 43%;
     }
     @include tablets {
         display: none;
     }
     @include phones {
-        display: block;
+        display: none;
         position: static;
         max-width: 100px;
         width: 100%;
@@ -168,4 +173,7 @@
     border: 1px solid #ffffff;
     margin-bottom: 10px;
     cursor: pointer;
+}
+.active-progressbar {
+    background-color: #fff; 
 }

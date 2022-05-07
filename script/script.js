@@ -21,6 +21,45 @@ const singleCard = document.querySelectorAll('.window-tabs');
 const btnCard = document.querySelectorAll('.single__btn-tab');
 const singleTabPanel = document.querySelector('.single__top-window-buttons');
 
+const message = document.querySelector('.header')
+const story = document.querySelector('.story');
+const catalog = document.querySelector('.catalog__title');
+const feedback = document.querySelector('.feedback');
+
+const arraySection = [message, story, catalog, feedback];
+
+const progressBarItem = document.querySelectorAll('.message-progressbar__item');
+
+let scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300
+  });
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1
+}
+const observer = new IntersectionObserver((entries, observer) => {
+    // для каждой записи-целевого элемента
+    entries.forEach(entry => {
+        // если элемент является наблюдаемым
+        if (entry.isIntersecting) {
+            const section = entry.target
+            arraySection.forEach((item, index) => {
+                if (item == section) {
+                    progressBarItem[index].classList.add('active-progressbar')
+                } else {
+                    if (progressBarItem[index].classList.contains('active-progressbar')) {
+                        progressBarItem[index].classList.remove('active-progressbar');
+                    }
+                }
+            })
+        }
+    })
+}, options)
+arraySection.forEach(item => {
+    observer.observe(item);
+})
+
 footerMenuButton.addEventListener('change', () => {
     if (footerMenuButton.checked) {
         footerMobileUl.classList.add('active-mobile-ul');

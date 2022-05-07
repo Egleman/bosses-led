@@ -28,21 +28,14 @@ let count = 1;
 
 countUp.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        if (count < 1) {
-            count = 1;
-            countNub[index].textContent = count;
-        } else {
-            count++;
-            countNub[index].textContent = count;
-        }
+        count++;
+        countNub[index].textContent = count;
+        
     })
 })
 countDown.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        if (count < 1) {
-            count = 1;
-            countNub[index].textContent = count;
-        } else {
+        if (count !== 1) {
             count--;
             countNub[index].textContent = count;
         }

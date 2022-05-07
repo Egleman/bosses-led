@@ -14,6 +14,10 @@
         img {
             max-width: 459px;
             margin-bottom: 0px;
+            @include laptop {
+                max-width: 350px;
+                width: 100%; 
+            }
             @include tablets {
                 max-width: 187px;
                 width: 100%;
@@ -28,15 +32,16 @@
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #FFFFFF;
             margin-bottom: 70px;
+
             @include tablets {
                 text-align: center;
             }
-            @include phones {
+            @include laptop {
                 font-size: 19px; 
             }
         }
         a {
-            font-family: 'Lato';
+            font-family: $font-lato;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;

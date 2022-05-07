@@ -219,6 +219,9 @@
         @include desktop-md {
             display: block;
         }
+        @include laptop {
+            margin-right: 150px;
+        }
         @include tablets {
             margin-right: 0px;
         }

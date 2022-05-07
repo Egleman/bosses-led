@@ -252,6 +252,7 @@
 }
 .arrow-tab-left {
     position: absolute;
+    z-index: 2;
     top: 35px;
     left: -11%;
     transform: rotate(180deg);
@@ -261,12 +262,16 @@
         left: -15%;
     }
     @media (max-width: 360px) {
-        top: 100%;
-        left: 0%;
+        top: 25%;
+        left: -10%;
+    }
+    @media (max-width: 320px) {
+        left: -5%;
     }
 }
 .arrow-tab-right {
     position: absolute;
+    z-index: 2;
     top: 35px;
     right: -10%;
     cursor: pointer;
@@ -275,8 +280,11 @@
         right: -15%;
     }
     @media (max-width: 360px) {
-        top: 100%;
-        right: 0%;
+        top: 25%;
+        right: -10%;
+    }
+    @media (max-width: 320px) {
+        right: -5%;
     }
 }
 .image-slide {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./script/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     <title>Bosses Led</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__left">
@@ -267,10 +268,10 @@
                     </div>
                     <div class="message-progressbar">
                         <nav class="message-progressbar__list">
-                            <a href="#" class='message-progressbar__item'></a>
-                            <a href="#" class='message-progressbar__item'></a>
-                            <a href="#" class='message-progressbar__item'></a>
-                            <a href="#" class='message-progressbar__item'></a>
+                            <a href="#header" class='message-progressbar__item'></a>
+                            <a href="#story" class='message-progressbar__item'></a>
+                            <a href="#catalog" class='message-progressbar__item'></a>
+                            <a href="#feedback" class='message-progressbar__item'></a>
                         </nav>
                     </div>
                     
@@ -280,7 +281,7 @@
                 <img src="./images/service-icons/flash.png" alt="flaslight">
             </div> 
         </section>
-        <section class="story">
+        <section class="story" id="story">
             <div class="container">
                 <div class="story__inner">
                     <div class="story__text">
@@ -324,7 +325,7 @@
                 <img src="./images/Interior/flashlight.png" alt="img" class="warranty__img">
             </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <div class="container">
                 <h2 class="title catalog__title">Каталог</h2>
                 <div class="catalog__inner">
@@ -362,7 +363,7 @@
             </div>
             <img src="./images/Interior/flaslight-2.png" alt="img" class="catalog__flash">
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <div class="feedback__inner">
                     <div class="feedback__block">

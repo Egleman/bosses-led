@@ -3,6 +3,9 @@
     width: 100%;
     h2 {
         margin-bottom: 30px;
+        @include tablets {
+            font-size: 22px;
+        }
     }
     p {
         font-family: $font-lato;
@@ -12,6 +15,9 @@
         line-height: 140%;
         color: #FFFFFF;
         margin-bottom: 20px;
+        @include tablets {
+            font-size: 22px;
+        }
     }
     a {
         font-family: $font-lato;
@@ -26,6 +32,9 @@
         margin-bottom: 20px;
         img {
             margin-right: 10px;
+        }
+        @include tablets {
+            font-size: 15px;
         }
     } 
 }

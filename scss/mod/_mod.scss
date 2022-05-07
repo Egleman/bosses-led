@@ -11,3 +11,22 @@
         justify-content: center;
     }
 }
+#header__product {
+    background: #2D2D2D;
+    padding-bottom: 25px;
+}
+#header__logo {
+    max-width: 100px;
+}
+#contact__time {
+    p {
+        @include tablets {
+            font-size: 15px;
+        }
+    }
+}
+#contact-size {
+    @include tablets {
+        font-size: 19px;
+    }
+}

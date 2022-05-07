@@ -29,9 +29,10 @@
 }
 
 .arrow-slider-left {
+    z-index: 3;
     position: absolute;
     top: 385px;
-    left: -2%;
+    left: 0%;
     transform: rotate(180deg);
     cursor: pointer;
     @include desktop-lg {
@@ -39,47 +40,52 @@
     }
     @include desktop-md {
         top: 225px;
-        left: -3%;
+        left: 0%;
     }
     @include laptop {
         top: 250px;
     }
     @include tablets {
         top: 170px;
+        left: 15%;
     }
     @include phones {
         top: 250px;
         left:-6%;
     }
     @media (max-width: 470px) {
-        top: 100%;
-        left: 10%;
+        top: 48%;
+        left: 5%;
+        
     }
 }
 .arrow-slider-right {
+    z-index: 3;
     position: absolute;
     top: 385px;
-    right: -2%;
+    right: 0%;
     cursor: pointer;
     @include desktop-lg {
         top: 315px;
     }
     @include desktop-md {
         top: 225px;
-        right: -3%;
+        right: 0%;
     }
     @include laptop {
         top: 250px;
     }
     @include tablets {
         top: 170px;
+        right: 15%;
     }
     @include phones {
         top: 250px;
         right:-6%;
     }
     @media (max-width: 470px) {
-        top: 100%;
-        right: 10%;
+        top: 48%;
+        right: 5%;
+        
     }
 }

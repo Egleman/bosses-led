@@ -35,6 +35,9 @@
     color: #FFFFFF;
     text-align: right;
     margin-bottom: 30px;
+    @include desktop-lg {
+        margin-bottom: 15px;
+    }
 }
 .news__desc {
     font-family: $font-lato;
@@ -44,8 +47,10 @@
     line-height: 140%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @include desktop-lg {
+        font-size: 15px;
+    }
 }
 .read-more {
     font-family: $font-lato;
@@ -60,5 +65,23 @@
     align-items: center;
     span {
         margin-right: 15px;
+    }
+    @include tablets {
+        font-size: 15px;
+    }
+}
+#news__img {
+    @include desktop-lg {
+        margin-bottom: 15px;
+    }
+}
+#news__link {
+    margin-bottom: 30px;
+    @include desktop-lg {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    @include laptop {
+        font-size: 15px;
     }
 }

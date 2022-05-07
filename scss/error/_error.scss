@@ -1,26 +1,71 @@
-.message__error {
+.error {
     background: #2D2D2D;
     overflow: hidden;
     height: 100vh;
-}
-.message__error__text-block {
-    img {
-        max-width: 459px;
-        margin-bottom: 0px;
+    padding: 215px 0px;
+    &__inner {
+        display: flex;
+        justify-content: center;
     }
-    p {
-        font-family: $font-playFair;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 140%;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: #FFFFFF;
+    &__text-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img {
+            max-width: 459px;
+            margin-bottom: 0px;
+            @include tablets {
+                max-width: 187px;
+                width: 100%;
+            }
+        }
+        p {
+            font-family: $font-playFair;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 140%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FFFFFF;
+            margin-bottom: 70px;
+            @include tablets {
+                text-align: center;
+            }
+            @include phones {
+                font-size: 19px; 
+            }
+        }
+        a {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FF1E56;
+            display: flex;
+            align-items: center;
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+    &__flashlight {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-self: center;
+        top: auto;
+        bottom: 0;
+        img {
+            margin: 0 auto;
+            @include tablets {
+                max-width: 320px;
+                width: 100%;
+            }
+        }
     }
 }
-.message__error__flashlight {
-    bottom: -60%;
-    left:63%;
-    top: 0;
-    transform: rotate(-90deg);
-}
+
+

@@ -1,12 +1,21 @@
 .single {
     padding: 60px 0px 60px 0px;
+    @include laptop {
+        padding: 60px 0px 30px 0px;
+    }
     &__top{
         display: flex;
+        @include laptop {
+            flex-direction: column;
+        }
     }
     &__top-tabs {
         max-width: 850px;
         width: 100%;
         margin-right: 50px;
+        @include laptop {
+            margin-right: 0px;
+        }
     }
     &__top-window {
         margin-bottom: 50px;
@@ -18,11 +27,35 @@
     &__top-window-buttons {
         display: flex;
         justify-content: space-between;
+        @include laptop {
+            margin-bottom: 30px;
+        }
+        @include phones {
+            display: none;
+        }
         img {
             cursor: pointer; 
+            @include desktop-lg {
+                max-width: 100px;
+            }
+            @include desktop-md {
+                max-width: 80px;
+            }
+            @include laptop {
+                max-width: 120px;
+            }
+            @include tablets {
+                max-width: 100px;
+            }
+            @include phones {
+                max-width: 67px;
+            }
         }
     }
     &__desc {
+        @include laptop {
+            order: 1;
+        }
         h1 {
             font-family: $font-playFair;
             font-style: normal;
@@ -32,6 +65,13 @@
             letter-spacing: 0.03em;
             color: #2D2D2D;
             margin-bottom: 50px;
+            @include desktop-xlg {
+                font-size: 30px;
+            }
+            @include phones {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
         }
         p {
             font-family: $font-lato;
@@ -42,6 +82,10 @@
             letter-spacing: 0.03em;
             color: #2D2D2D;
             margin-bottom: 50px;
+            @include phones {
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
         }
         span {
             font-family: $font-lato;
@@ -53,6 +97,10 @@
             color: #2D2D2D;
             margin-bottom: 30px;
             display: flex;
+            @include phones {
+                font-size: 19px;
+                margin-bottom: 20px;
+            }
         }
     }
     &__list {
@@ -71,6 +119,9 @@
                 line-height: 180%;
                 letter-spacing: 0.03em;
                 color: #2D2D2D;
+                @include phones {
+                    font-size: 15px;
+                }
             }
         }
         ul:nth-child(2) {
@@ -82,6 +133,9 @@
                 line-height: 180%;
                 letter-spacing: 0.03em;
                 color: #2D2D2D;
+                @include phones {
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -89,6 +143,24 @@
         max-width: 850px;
         width: 100%;
         margin-right: 50px;
+        @include desktop-xlg {
+            max-width: 812px;
+        }
+        @include desktop-lg {
+            max-width: 620px;
+            margin-top: -241px;
+        }
+        @include desktop-md {
+            max-width: 463px;
+            margin-top: -475px;
+        }
+        @include laptop {
+            margin-top: 0px;
+            margin-right: 0px;
+            max-width: 100%;
+            order: 2;
+            margin-bottom: 30px;
+        }
         h3 {
             font-family: $font-lato;
             font-style: normal;
@@ -98,11 +170,119 @@
             letter-spacing: 0.03em;
             color: #2D2D2D;
             margin-bottom: 30px;
+            @include phones {
+                margin-bottom: 20px;
+                font-size: 19px;
+            }
         }
         img {
             max-width: 709px;
             width: 100%;
+            @include laptop {
+                max-width: 100%;
+            }
         }
+    }
+    &__count {
+        display: flex;
+        max-width: 385px;
+        width: 100%;
+        justify-content: space-between;
+        @include laptop {
+            display: none;
+        }
+        a {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 120%;
+            color: #FFFFFF;
+            padding: 15px 75px;
+            background: #FF1E56;
+        }
+    }
+    &__count-block {
+        display: flex;
+        max-width: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 16px;
+            border: 1px solid black;
+            margin-bottom: 0px;
+        }
+        img {
+            cursor: pointer;
+        }
+        @include phones {
+            margin-bottom: 20px;
+        }
+    }
+    &__count-mobile {
+        display: none;
+        @include laptop {
+            display: flex;
+            order: 3;
+        }
+        @include phones {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.slider-mobile-tab {
+    position: relative;
+    display: none;
+    margin-bottom: 40px;
+    @include phones {
+        display: flex;
+    }
+    @media (max-width: 470px) {
+        max-width: 261px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+.arrow-tab-left {
+    position: absolute;
+    top: 35px;
+    left: -11%;
+    transform: rotate(180deg);
+    cursor: pointer;
+    @media (max-width: 470px) {
+        top: 20px;
+        left: -15%;
+    }
+    @media (max-width: 360px) {
+        top: 100%;
+        left: 0%;
+    }
+}
+.arrow-tab-right {
+    position: absolute;
+    top: 35px;
+    right: -10%;
+    cursor: pointer;
+    @media (max-width: 470px) {
+        top: 20px;
+        right: -15%;
+    }
+    @media (max-width: 360px) {
+        top: 100%;
+        right: 0%;
+    }
+}
+.image-slide {
+    height: 100px;
+    @media (max-width: 470px) {
+        height: 67px;
     }
 }
 

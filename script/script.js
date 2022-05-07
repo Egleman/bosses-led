@@ -17,6 +17,10 @@ const plusImg = document.querySelectorAll('.plus-img');
 const footerMenuButton = document.querySelector('#footer__menu-toggle');
 const footerMobileUl = document.querySelector('.footer__list-mobile');
 
+const singleCard = document.querySelectorAll('.window-tabs');
+const btnCard = document.querySelectorAll('.single__btn-tab');
+const singleTabPanel = document.querySelector('.single__top-window-buttons');
+
 footerMenuButton.addEventListener('change', () => {
     if (footerMenuButton.checked) {
         footerMobileUl.classList.add('active-mobile-ul');

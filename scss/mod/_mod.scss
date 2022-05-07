@@ -3,4 +3,11 @@
 }
 .black {
     color: black;
+    font-size: 15px;
+}
+.centered-slide {
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
 }

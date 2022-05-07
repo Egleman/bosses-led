@@ -1,5 +1,11 @@
 .buy {
     padding: 60px 0px;
+    @include laptop {
+        padding: 30px 0px 60px 0px;
+    }
+    @include phones {
+        padding: 30px 0px 30px 0px;
+    }
     h2 {
         font-family: $font-playFair;
         font-style: normal;
@@ -9,19 +15,71 @@
         letter-spacing: 0.03em;
         color: #2D2D2D;
         margin-bottom: 50px;
+        @include desktop-md {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        @include tablets {
+            font-size: 24px;
+        }
+        @include phones {
+            font-size: 22px;
+        }
     }
 }
 
 .arrow-slider-left {
     position: absolute;
     top: 385px;
-    left: -5%;
+    left: -2%;
     transform: rotate(180deg);
     cursor: pointer;
+    @include desktop-lg {
+        top: 315px;
+    }
+    @include desktop-md {
+        top: 225px;
+        left: -3%;
+    }
+    @include laptop {
+        top: 250px;
+    }
+    @include tablets {
+        top: 170px;
+    }
+    @include phones {
+        top: 250px;
+        left:-6%;
+    }
+    @media (max-width: 470px) {
+        top: 100%;
+        left: 10%;
+    }
 }
 .arrow-slider-right {
     position: absolute;
     top: 385px;
-    right: -5%;
+    right: -2%;
     cursor: pointer;
+    @include desktop-lg {
+        top: 315px;
+    }
+    @include desktop-md {
+        top: 225px;
+        right: -3%;
+    }
+    @include laptop {
+        top: 250px;
+    }
+    @include tablets {
+        top: 170px;
+    }
+    @include phones {
+        top: 250px;
+        right:-6%;
+    }
+    @media (max-width: 470px) {
+        top: 100%;
+        right: 10%;
+    }
 }

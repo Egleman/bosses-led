@@ -12,6 +12,7 @@
         }
     }
     &__text {
+        z-index: 1;
         max-width: 725px;
         width: 100%;
         @include desktop-xlg {

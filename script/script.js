@@ -22,7 +22,7 @@ const btnCard = document.querySelectorAll('.single__btn-tab');
 const singleTabPanel = document.querySelector('.single__top-window-buttons');
 
 const message = document.querySelector('.header')
-const story = document.querySelector('.story');
+const story = document.querySelector('.story__text > a');
 const catalog = document.querySelector('.catalog__title');
 const feedback = document.querySelector('.feedback');
 

@@ -1280,7 +1280,7 @@ a {
 .message-progressbar {
   position: fixed;
   top: 60%;
-  right: 7%;
+  right: 3%;
   z-index: 3;
 }
 
@@ -1377,6 +1377,7 @@ a {
 }
 
 .story__text {
+  z-index: 1;
   max-width: 725px;
   width: 100%;
 }
@@ -1602,6 +1603,7 @@ a {
 }
 
 .warranty__img {
+  z-index: 0;
   position: absolute;
   top: -135%;
   left: -5%;

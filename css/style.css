@@ -1830,6 +1830,13 @@ a {
 @media (max-width: 606px) {
   .feedback__block p:first-child {
     font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .feedback__block p:first-child {
+    margin-bottom: 15px;
   }
 }
 
@@ -1846,6 +1853,13 @@ a {
 @media (max-width: 606px) {
   .feedback__block p:nth-child(2) {
     font-size: 12px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .feedback__block p:nth-child(2) {
+    margin-bottom: 15px;
   }
 }
 
@@ -1912,6 +1926,7 @@ a {
 @media (max-width: 606px) {
   .feedback__input {
     font-size: 17px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1977,9 +1992,19 @@ a {
 
 .error {
   background: #2D2D2D;
-  overflow: hidden;
   height: 100vh;
-  padding: 215px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-height: 500px) {
+  .error {
+    padding-top: 100px;
+  }
 }
 
 .error__inner {
@@ -2044,6 +2069,12 @@ a {
 @media (max-width: 1022px) {
   .error__text-block p {
     font-size: 19px;
+  }
+}
+
+@media (max-height: 420px) {
+  .error__text-block p {
+    margin-bottom: 30px;
   }
 }
 

@@ -4,8 +4,7 @@ const singleTabPanel = document.querySelector('.single__top-window-buttons');
 
 
     singleTabPanel.addEventListener('click', (e) => {
-        if(window.innerWidth <= 606) {
-        } else {
+        
             if (e.target.closest('.single__btn-tab')) {
                 const tabBtn = e.target.closest('.single__btn-tab');
                 btnCard.forEach((btn, index) => {
@@ -20,6 +19,4 @@ const singleTabPanel = document.querySelector('.single__top-window-buttons');
                     }
                 })
             }
-        }
-        
     })

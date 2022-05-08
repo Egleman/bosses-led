@@ -17,10 +17,6 @@ const plusImg = document.querySelectorAll('.plus-img');
 const footerMenuButton = document.querySelector('#footer__menu-toggle');
 const footerMobileUl = document.querySelector('.footer__list-mobile');
 
-const singleCard = document.querySelectorAll('.window-tabs');
-const btnCard = document.querySelectorAll('.single__btn-tab');
-const singleTabPanel = document.querySelector('.single__top-window-buttons');
-
 const countUp = document.querySelectorAll('.count-up');
 const countDown = document.querySelectorAll('.count-down');
 let countNub = document.querySelectorAll('.single__count-block > p');
@@ -40,32 +36,7 @@ countDown.forEach((btn, index) => {
             countNub[index].textContent = count;
         }
     })
-})  
-
-
-if (window.location.pathname == "/single-product-page.html") {
-    singleTabPanel.addEventListener('click', (e) => {
-        if(window.innerWidth <= 606) {
-        } else {
-            if (e.target.closest('.single__btn-tab')) {
-                const tabBtn = e.target.closest('.single__btn-tab');
-                btnCard.forEach((btn, index) => {
-                    if (btn === tabBtn) {
-                        if (singleCard[index].classList.contains('d-none')) {
-                            singleCard[index].classList.remove('d-none');
-                        }
-                    } else {
-                        if (!singleCard[index].classList.contains('d-none')) {
-                            singleCard[index].classList.add('d-none');
-                        }
-                    }
-                })
-            }
-        }
-        
-    })
-    
-}   
+})    
 
 if (!window.location.pathname == "/error.html") {
     footerMenuButton.addEventListener('change', () => {
